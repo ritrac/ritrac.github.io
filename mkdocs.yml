@@ -1,0 +1,135 @@
+site_name: Efficiency Is All You Need
+site_author: Clément Coussirat
+site_description: a simple blog to post some performance engineering thoughts.
+site_url: https://ritrac.github.io/mkdocs-demo
+repo_url: https://github.com/ritrac/
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://github.com/ritrac
+    - icon: fontawesome/brands/github
+      link: https://www.linkedin.com/in/clément-coussirat-27ab5172
+ # consent:
+ #   title: Cookie consent
+ #   description: >-
+ #     Cookies are automaticaly collected by the template of this website engine.
+ #     With my consent, you can safely disable everything.
+ #   analytics:
+ #     name: GitHub
+ #     checked: false
+ #   actions:
+ #     - reject
+ #     - manage
+
+# mkdocs, readthedocs, bootstrap, material, cerulean  cosmo, cyborg, darkly, flatly, journal,  litera, lumen, lux, materia, minty, pulse, sandstone, simplex, slate, solar, spacelab, superhero, united, yeti
+#
+# https://docs.nomana-it.fr/blog/2024/11/26/installing-and-deploying-mkdocs-material-with-github-pages/
+
+theme:
+  name: material
+  repo: fontawesome/brands/git-alt
+  custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: blue grey
+      accent: amber
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: blue grey
+      accent: amber
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - header.autohide
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+plugins:
+  - search
+  - privacy
+  - awesome-pages
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+  #- social
+  #- blog:
+  #    blog_dir: QuickNotes
+  - tags:
+      tags_file: tags/index.md
+    #tags_file: QuickNotes/tags.md
+  - macros
+  #- meta-descriptions
+  - mkdocs-nav-weight
+  - glightbox
+
+  - exclude:
+       glob:
+          - "*~"
+
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_style: github-dark
+      noclasses: true
+      #auto_title: true
+      linenums: true
+
+  - pymdownx.inlinehilite
+
+  # notes
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  - tables
+
+  # Python Markdown
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - meta
+  - toc:
+      permalink: "#"
+      permalink_title: Anchor link to this section for reference
+
+  # PyMdown Extensions
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.snippets:
+      base_path:
+        - docs
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
