@@ -1,7 +1,7 @@
 site_name: Efficiency Is All You Need
 site_author: Clément Coussirat
 site_description: a simple blog to post some performance engineering thoughts.
-site_url: https://ritrac.github.io/mkdocs-demo
+site_url: https://ritrac.github.io/
 repo_url: https://github.com/ritrac/
 
 extra:
