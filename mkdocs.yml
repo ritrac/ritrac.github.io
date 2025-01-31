@@ -83,7 +83,8 @@ plugins:
   - tags:
       tags_file: tags/index.md
     #tags_file: QuickNotes/tags.md
-  - macros
+  - macros:
+      include_dir: docs/assets/include
   #- meta-descriptions
   - mkdocs-nav-weight
   - glightbox
