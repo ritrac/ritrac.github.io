@@ -1,8 +1,9 @@
 ---
 title: CPU
 date: today
-description: Tiny description
+description: CPU related micro-benchmarks
 icon: cpu-icon
+subtitle: CPU related micro-benchmarks
 weight: 10
 ---
 
