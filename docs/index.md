@@ -4,21 +4,20 @@ title: Welcome
 description: Efficiency Is All You Need: a repository for micro-benchmark results
 ---
 
-Repository for μbench results on my personal hardware:
+Repository for various μbenchmarks results on my personal hardware:
 
 {% import 'macros.md' as includes %}
 
-## Index
 
-### CPU
+## CPU
 
 {{ includes.list_pages_l1('CPU', navigation) }}
 
-### GPU
+## GPU
 
 {{ includes.list_pages_l1('GPU', navigation) }}
 
-### Storage & FileSystem
+## Storage & FileSystem
 
 {{ includes.list_pages_l1('FileSystem', navigation) }}
 
