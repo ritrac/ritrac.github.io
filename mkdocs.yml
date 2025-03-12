@@ -4,23 +4,10 @@ site_description: a simple blog to post some performance engineering thoughts.
 site_url: https://ritrac.github.io/
 repo_url: https://github.com/ritrac/
 
-extra:
-  social:
-    - icon: fontawesome/brands/linkedin
-      link: https://github.com/ritrac
-    - icon: fontawesome/brands/github
-      link: https://www.linkedin.com/in/clément-coussirat-27ab5172
- # consent:
- #   title: Cookie consent
- #   description: >-
- #     Cookies are automaticaly collected by the template of this website engine.
- #     With my consent, you can safely disable everything.
- #   analytics:
- #     name: GitHub
- #     checked: false
- #   actions:
- #     - reject
- #     - manage
+#extra:
+#  social:
+#    - icon: fontawesome/brands/github
+#      link: https://github.com/ritrac
 
 # mkdocs, readthedocs, bootstrap, material, cerulean  cosmo, cyborg, darkly, flatly, journal,  litera, lumen, lux, materia, minty, pulse, sandstone, simplex, slate, solar, spacelab, superhero, united, yeti
 #
@@ -29,6 +16,8 @@ extra:
 theme:
   name: material
   repo: fontawesome/brands/git-alt
+  logo: assets/technology-icon.svg
+  favicon: assets/technology-icon.svg
   custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -93,12 +82,10 @@ plugins:
        glob:
           - "*~"
 
-
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight:
       use_pygments: true
-      pygments_style: github-dark
       noclasses: true
       #auto_title: true
       linenums: true
