@@ -61,7 +61,7 @@ Observations:
 * The access pattern matters
 * The random accesses are noisy and slower by magnitude orders
 
-## CPU cycles comparison
+## CPU cycle comparison
 
 ![Tree comparison linear scale](trees/tree-full-access-time-linear-scale.svg)
 
@@ -70,7 +70,7 @@ Observations:
 * Same results (the system is was not loaded)
 * It's easier to see that with Trees, the efficiency is lower than 1%
 
-## CPU cycles in loglog scale
+## CPU cycle in loglog scale
 
 ![Tree comparison loglog scale](trees/tree-full-access-time-loglog-scale.svg)
 
